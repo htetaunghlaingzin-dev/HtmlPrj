@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities
+@tailwind utilities;
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+import Swiper from 'swiper';
+// import Swiper styles
+import 'swiper/css';
+
+const swiper = new Swiper(...);

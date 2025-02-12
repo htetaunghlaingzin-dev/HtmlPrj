@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+        <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<style>
+    .swiper-wrapper {
+width: 100%;
+height: max-content !important;
+padding-bottom: 30px !important;
+-webkit-transition-timing-function: linear !important;
+transition-timing-function: linear !important;
+position: relative;
+}
+.swiper-pagination-bullet {
+background: #4F46E5;
+}
+.swiper-pagination-bullet-active {
+background: #4F46E5 !important;
+}
+    </style>
+</head>
+<body class="bg-slate-900">
+    <div class="" id="go">
+        <div  class="w-full flex h-20 bg-slate-900 fixed z-50 justify-between p-5 ">
+            <div>
+           <a href="#" class="ml-5"> 
+            <img width="64" height="64"  class="inline-block mt-0 mr-0 align-middle" src="https://img.icons8.com/nolan/64/real-estate.png" alt="real-estate"/> <span class="text-2xl font-semibold text-white ml-0">Hello</span>
+        </a>
+        </div>
+        <div class="">
+            <ul class="flex ">
+                <a href="index.html" class="text-slate-500 p-2 rounded-lg hover:bg-purple-500 hover:text-white mr-0"><li>Home</li></a>
+                <a href="" class="text-slate-500 p-2 rounded-lg hover:bg-purple-500 hover:text-white"><li>Properties </li></a>
+                <a href="" class="text-slate-500 p-2 rounded-lg hover:bg-purple-500 hover:text-white"><li>About Us</li></a>
+                <a href="" class="text-slate-500 p-2 rounded-lg hover:bg-purple-500 hover:text-white"><li>Services</li></a>
+                <a href="" class="text-slate-500 p-2 rounded-lg hover:bg-purple-500 hover:text-white"><li>Contact Us</li></a>
+            </ul>
+        </div>
+        
+        <div>
+            <a href="#" class=" p-3  rounded-xl text-purple-500  border-2 border-purple-500 hover:bg-purple-500 hover:text-white align-middle hover:shadow-md hover:shadow-slate-500"><button>Login/SignUp</button></a>
+        </div>
+        </div>
+        <div class="w-full h-16 bg-purple-500 "></div>
+        <!-- header section -->
+        <div class=" bg-slate-800 px-5 my-3 py-20">
+            <div class="text-white ml-10 mt-10 mr-10">
+                <h1 class="font-bold text-4xl">Featured Properties</h1>
+                <div class="flex justify-between mt-5 text-slate-500">
+                    <p class="text-lg p-3">Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click "View Details" for more information.</p>
+                </div>
+                <div class="">
+                  <a href="#go">
+                  <img src="https://www.freeiconspng.com/thumbs/up-arrow-png/black-up-arrow-png-6.png" alt="" class="right-5 bottom-5 fixed w-10 h-10 bg-slate-400 rounded-md z-50"></a>
+                </div>
+            </div>
+        </div>
+        <!-- properties search -->
+        <div class="relative ">
+            <div class="mx-[144px] absolute top-[-45px] ">
+                <div class="inline-block bg-slate-800 p-2 mx-16">
+                    <input type="text" name="" id="" class="block w-[1350px] p-5 bg-slate-900 text-slate-600 " placeholder="search for a property">
+                    <a href="#" class="absolute top-4 right-20 p-3 bg-purple-500 rounded-lg"><Button>Find property</Button></a>
+                </div>
+                <div class="bg-slate-800 px-4 py-2  flex flex-nowrap">
+                    <select name="" id="" required class=" bg-slate-900 text-slate-600 p-3 mr-3 w-1/5">
+                        <option value="">Select a Place</option>
+                        <option value="1">Pyay</option>
+                        <option value="2">Yangon</option>
+                        <option value="3">Mandalay</option>
+                        <option value="4">Myitkyina</option>
+                        <option value="5">Sittwe</option>
+                    </select>
+                    <select name="" id="" required class=" bg-slate-900 text-slate-600 p-3 mr-3 w-1/5">
+                        <option value="">Property type</option>
+                        <option value="1">Residential</option>
+                        <option value="2">Commercial</option>
+                        <option value="3">Industrial</option>
+                        <option value="4">Personal Property</option>
+                        <option value="5">Condo</option>
+                    </select>
+                    <select name="" id="" required class=" bg-slate-900 text-slate-600 p-3 mr-3 w-1/5">
+                        <option value="">Pricing Range</option>
+                        <option value="1">$1-500lkhs</option>
+                        <option value="2">501lkhs-1000lkhs</option>
+                        <option value="3">1001lkhs-2000lkhs</option>
+                        <option value="4">2002lkhs-3000lkhs</option>
+                        <option value="5">Over 3000lkhs</option>
+                    </select>
+                    <select name="" id="" required class=" bg-slate-900 text-slate-600 p-3 mr-3 w-1/5">
+                        <option value="">Property size</option>
+                        <option value="1">1000sqft-2000sqft</option>
+                        <option value="2">2001sqft-3000sqft</option>
+                        <option value="3">over 3000sqft</option>
+                        </select>
+                    <select name="" id="" required class=" bg-slate-900 text-slate-600 p-3 mr-3 w-1/5">
+                        <option value="">Build Year</option>
+                        <option value="1">1990-2000</option>
+                        <option value="2">2001-2010</option>
+                        <option value="3">2011-2020</option>
+                        <option value="4">2021- present</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+            <!-- card design -->
+            <div class="   mt-40 mb-20">
+                <div class="text-white ml-10 mt-10 mr-10">
+                    <h1 class="font-bold text-4xl">Discover a World of Possibilities</h1>
+                    <div class="flex justify-between mt-5 text-slate-500">
+                        <p class="text-lg p-3">Our portfolio of properties is as diverse as your dreams. Explore the following categories to find the perfect property that resonates with your vision of home</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full relative ">
+                <div class="swiper centered-slide-carousel swiper-container relative ">
+                <div class="swiper-wrapper">
+                 <div class="swiper-slide">
+                   <div class="border-2 border-purple-500 rounded-2xl flex flex-col items-center justify-center px-10">
+                    <div class="w-full h-1/3 flex justify-center">
+                        <img src="/images/room.png" alt="" class="  p-5 ">
+                    </div>
+                    <div class=" m-5 w-full h-1/3">
+                        <h3 class="text-white text-xl">Seaside Serenity Villa</h3>
+                        <p class="text-slate-500 text-lg">A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood... <a href="#">Read More</a></p>
+                        <div class="flex flex-nowrap">
+                            <span class="inline-block w-1/3 border-2 rounded-full p-2 text-white mt-5 mr-2 text-center"><img class="inline-block mr-2" src="/images/bed.png" alt="">  4-bedroom</span>
+                            <span class="inline-block w-1/3 border-2 rounded-full p-2 text-white mt-5 mr-2 text-center"><img class="inline-block mr-2" src="/images/bath.png" alt="">  3-bathroom</span>
+                            <span class="inline-block w-1/3 border-2 rounded-full p-2  text-white mt-5 text-center"><img class="inline-block mr-2" src="/images/villa.png" alt="">  Villa</span>
+                        </div>
+                    </div>
+                    <div class="flex m-5 w-full h-1/3">
+                        <div class="w-1/3">
+                            <p class="text-slate-500">Price</p>
+                            <p class="font-semibold text-xl text-white">$550,000</p>
+                        </div>
+                        <div class="w-2/3 rounded-lg bg-purple-500 justify-center items-center flex">
+                            <a href="#" class="inline-block">View Properties Details</a>
+                        </div>
+                    </div>  
+                   </div>
+                 </div>
+                 <div class="swiper-slide">
+                    <div class="border-2 border-purple-500 rounded-2xl flex flex-col items-center justify-center px-10">
+                        <div class="w-full h-1/3 flex justify-center">
+                            <img src="/images/room.png" alt="" class="  p-5 ">
+                        </div>
+                        <div class=" m-5 w-full h-1/3">
+                            <h3 class="text-white text-xl">Seaside Serenity Villa</h3>
+                            <p class="text-slate-500 text-lg">A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood... <a href="#">Read More</a></p>
+                            <div class="flex flex-nowrap">
+                                <span class="inline-block w-1/3 border-2 rounded-full p-2 text-white mt-5 mr-2 text-center"><img class="inline-block mr-2" src="/images/bed.png" alt="">  4-bedroom</span>
+                                <span class="inline-block w-1/3 border-2 rounded-full p-2 text-white mt-5 mr-2 text-center"><img class="inline-block mr-2" src="/images/bath.png" alt="">  3-bathroom</span>
+                                <span class="inline-block w-1/3 border-2 rounded-full p-2  text-white mt-5 text-center"><img class="inline-block mr-2" src="/images/villa.png" alt="">  Villa</span>
+                            </div>
+                        </div>
+                        <div class="flex m-5 w-full h-1/3">
+                            <div class="w-1/3">
+                                <p class="text-slate-500">Price</p>
+                                <p class="font-semibold text-xl text-white">$550,000</p>
+                            </div>
+                            <div class="w-2/3 rounded-lg bg-purple-500 justify-center items-center flex">
+                                <a href="#" class="inline-block">View Properties Details</a>
+                            </div>
+                        </div>  
+                       </div>
+                 </div>
+                 <div class="swiper-slide">
+                    <div class="border-2 border-purple-500 rounded-2xl flex flex-col items-center justify-center px-10">
+                        <div class="w-full h-1/3 flex justify-center">
+                            <img src="/images/room.png" alt="" class="  p-5 ">
+                        </div>
+                        <div class=" m-5 w-full h-1/3">
+                            <h3 class="text-white text-xl">Seaside Serenity Villa</h3>
+                            <p class="text-slate-500 text-lg">A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood... <a href="#">Read More</a></p>
+                            <div class="flex flex-nowrap">
+                                <span class="inline-block w-1/3 border-2 rounded-full p-2 text-white mt-5 mr-2 text-center"><img class="inline-block mr-2" src="/images/bed.png" alt="">  4-bedroom</span>
+                                <span class="inline-block w-1/3 border-2 rounded-full p-2 text-white mt-5 mr-2 text-center"><img class="inline-block mr-2" src="/images/bath.png" alt="">  3-bathroom</span>
+                                <span class="inline-block w-1/3 border-2 rounded-full p-2  text-white mt-5 text-center"><img class="inline-block mr-2" src="/images/villa.png" alt="">  Villa</span>
+                            </div>
+                        </div>
+                        <div class="flex m-5 w-full h-1/3">
+                            <div class="w-1/3">
+                                <p class="text-slate-500">Price</p>
+                                <p class="font-semibold text-xl text-white">$550,000</p>
+                            </div>
+                            <div class="w-2/3 rounded-lg bg-purple-500 justify-center items-center flex">
+                                <a href="#" class="inline-block">View Properties Details</a>
+                            </div>
+                        </div>  
+                       </div>
+                 </div>
+                 <div class="swiper-slide">
+                    <div class="border-2 border-purple-500 rounded-2xl flex flex-col items-center justify-center px-10">
+                        <div class="w-full h-1/3 flex justify-center">
+                            <img src="/images/room.png" alt="" class="  p-5 ">
+                        </div>
+                        <div class=" m-5 w-full h-1/3">
+                            <h3 class="text-white text-xl">Seaside Serenity Villa</h3>
+                            <p class="text-slate-500 text-lg">A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood... <a href="#">Read More</a></p>
+                            <div class="flex flex-nowrap">
+                                <span class="inline-block w-1/3 border-2 rounded-full p-2 text-white mt-5 mr-2 text-center"><img class="inline-block mr-2" src="/images/bed.png" alt="">  4-bedroom</span>
+                                <span class="inline-block w-1/3 border-2 rounded-full p-2 text-white mt-5 mr-2 text-center"><img class="inline-block mr-2" src="/images/bath.png" alt="">  3-bathroom</span>
+                                <span class="inline-block w-1/3 border-2 rounded-full p-2  text-white mt-5 text-center"><img class="inline-block mr-2" src="/images/villa.png" alt="">  Villa</span>
+                            </div>
+                        </div>
+                        <div class="flex m-5 w-full h-1/3">
+                            <div class="w-1/3">
+                                <p class="text-slate-500">Price</p>
+                                <p class="font-semibold text-xl text-white">$550,000</p>
+                            </div>
+                            <div class="w-2/3 rounded-lg bg-purple-500 justify-center items-center flex">
+                                <a href="#" class="inline-block">View Properties Details</a>
+                            </div>
+                        </div>  
+                       </div>
+                 </div>
+                 <div class="swiper-slide">
+                    <div class="border-2 border-purple-500 rounded-2xl flex flex-col items-center justify-center px-10">
+                        <div class="w-full h-1/3 flex justify-center">
+                            <img src="/images/room.png" alt="" class="  p-5 ">
+                        </div>
+                        <div class=" m-5 w-full h-1/3">
+                            <h3 class="text-white text-xl">Seaside Serenity Villa</h3>
+                            <p class="text-slate-500 text-lg">A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood... <a href="#">Read More</a></p>
+                            <div class="flex flex-nowrap">
+                                <span class="inline-block w-1/3 border-2 rounded-full p-2 text-white mt-5 mr-2 text-center"><img class="inline-block mr-2" src="/images/bed.png" alt="">  4-bedroom</span>
+                                <span class="inline-block w-1/3 border-2 rounded-full p-2 text-white mt-5 mr-2 text-center"><img class="inline-block mr-2" src="/images/bath.png" alt="">  3-bathroom</span>
+                                <span class="inline-block w-1/3 border-2 rounded-full p-2  text-white mt-5 text-center"><img class="inline-block mr-2" src="/images/villa.png" alt="">  Villa</span>
+                            </div>
+                        </div>
+                        <div class="flex m-5 w-full h-1/3">
+                            <div class="w-1/3">
+                                <p class="text-slate-500">Price</p>
+                                <p class="font-semibold text-xl text-white">$550,000</p>
+                            </div>
+                            <div class="w-2/3 rounded-lg bg-purple-500 justify-center items-center flex">
+                                <a href="#" class="inline-block">View Properties Details</a>
+                            </div>
+                        </div>  
+                       </div>
+                 </div>
+                 <div class="swiper-slide">
+                    <div class="border-2 border-purple-500 rounded-2xl flex flex-col items-center justify-center px-10">
+                        <div class="w-full h-1/3 flex justify-center">
+                            <img src="/images/room.png" alt="" class="  p-5 ">
+                        </div>
+                        <div class=" m-5 w-full h-1/3">
+                            <h3 class="text-white text-xl">Seaside Serenity Villa</h3>
+                            <p class="text-slate-500 text-lg">A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood... <a href="#">Read More</a></p>
+                            <div class="flex flex-nowrap">
+                                <span class="inline-block w-1/3 border-2 rounded-full p-2 text-white mt-5 mr-2 text-center"><img class="inline-block mr-2" src="/images/bed.png" alt="">  4-bedroom</span>
+                                <span class="inline-block w-1/3 border-2 rounded-full p-2 text-white mt-5 mr-2 text-center"><img class="inline-block mr-2" src="/images/bath.png" alt="">  3-bathroom</span>
+                                <span class="inline-block w-1/3 border-2 rounded-full p-2  text-white mt-5 text-center"><img class="inline-block mr-2" src="/images/villa.png" alt="">  Villa</span>
+                            </div>
+                        </div>
+                        <div class="flex m-5 w-full h-1/3">
+                            <div class="w-1/3">
+                                <p class="text-slate-500">Price</p>
+                                <p class="font-semibold text-xl text-white">$550,000</p>
+                            </div>
+                            <div class="w-2/3 rounded-lg bg-purple-500 justify-center items-center flex">
+                                <a href="#" class="inline-block">View Properties Details</a>
+                            </div>
+                        </div>  
+                       </div>
+                 </div>
+                </div>
+                <div class="swiper-pagination "></div>
+                </div>
+                </div>
+                <div class="  m-5">
+                    <div class="text-white ml-10 mt-10 mr-10">
+                        <h1 class="font-bold text-4xl">Let's Make it Happen</h1>
+                        <div class="flex justify-between mt-5 text-slate-500">
+                            <p class="text-lg p-3">Ready to take the first step toward your dream property? Fill out the form below, and our real estate wizards will work their magic to find your perfect match. Don't wait; let's embark on this exciting journey together.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- fieldset message sent -->
+                 <div class="m-10">
+                    <fieldset class="border-slate-500 border-2 mx-5 p-5">
+                        <table class=" w-full">
+                            <tr class="w-full flex flex-nowrap">
+                                <td class="inline-block w-1/4 m-3">
+                                    <p class="text-white m-2">First Name</p>
+                                    <input type="text" name="" id="" placeholder="Enter Your First Name" class="w-full bg-slate-800 text-slate-500 border-2 border-slate-600">
+                                </td>
+                                <td class="inline-block w-1/4 m-3">
+                                    <p class="text-white m-2">Last Name</p>
+                                    <input type="text" name="" id="" placeholder="Enter Your Last Name" class="w-full bg-slate-800 text-slate-500 border-2 border-slate-600">
+                                </td>
+                                <td class="inline-block w-1/4 m-3">
+                                    <p class="text-white m-2">Enter your email</p>
+                                    <input type="email" name="" id="" placeholder="Enter Your Email" required class="w-full bg-slate-800 text-slate-500 border-2 border-slate-600">
+                                </td>
+                                <td class="inline-block w-1/4 m-3">
+                                    <p class="text-white m-2">Phone Number</p>
+                                    <input type="tel" name="" id="" placeholder="Enter Your Phone Number" required class="w-full bg-slate-800 text-slate-500 border-2 border-slate-600">
+                                </td>
+                            </tr>
+                            <tr class="w-full flex flex-nowrap">
+                                <td class="inline-block w-1/4 m-3">
+                                    <p class="text-white m-2">Prefered Location</p>
+                                    <select name="" id="" required class=" bg-slate-800 text-slate-500 mr-3 w-full border-2 border-slate-600">
+                                        <option value="">Select a Place</option>
+                                        <option value="1">Pyay</option>
+                                        <option value="2">Yangon</option>
+                                        <option value="3">Mandalay</option>
+                                        <option value="4">Myitkyina</option>
+                                        <option value="5">Sittwe</option>
+                                    </select>
+                                </td>
+                                <td class="inline-block w-1/4 m-3">
+                                    <p class="text-white m-2">Property Type</p>
+                                    <select name="" id="" required class=" bg-slate-800 text-slate-500 mr-3 w-full border-2 border-slate-600">
+                                        <option value="">Property type</option>
+                                        <option value="1">Residential</option>
+                                        <option value="2">Commercial</option>
+                                        <option value="3">Industrial</option>
+                                        <option value="4">Personal Property</option>
+                                        <option value="5">Condo</option>
+                                    </select>
+                                </td>
+                                <td class="inline-block w-1/4 m-3">
+                                    <p class="text-white m-2">No. of Master bedroom</p>
+                                    <select name="" id="" required class=" bg-slate-800 text-slate-500 mr-3 w-full border-2 border-slate-600">
+                                        <option value="">Select Number of Master bedroom</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </td>
+                                <td class="inline-block w-1/4 m-3">
+                                    <p class="text-white m-2">No. of Normal Bedrooms</p>
+                                    <select name="" id="" required class=" bg-slate-800 text-slate-500 mr-3 w-full border-2 border-slate-600">
+                                        <option value="">Select Number of Normal Bedrooms</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr class="w-full flex flex-nowrap">
+                                <td class="inline-block w-2/4 m-3" colspan="2">
+                                    <p class="text-white m-2">Budget</p>
+                                    <select name="" id="" required class=" bg-slate-800 text-slate-500 mr-3 w-full border-2 border-slate-600">
+                                        <option value="">Select a Budget</option>
+                                        <option value="1">$1-500lkhs</option>
+                                        <option value="3">1001lkhs-2000lkhs</option>
+                                        <option value="4">2002lkhs-3000lkhs</option>
+                                        <option value="5">Over 3000lkhs</option>
+                                        <option value="2">501lkhs-1000lkhs</option>
+                                    </select>
+                                </td>
+                                <td class="inline-block w-2/4 m-3" colspan="2" >
+                                    <p class="text-white m-2">Preferred Contact Method</p>
+                                    <input type="radio" name="call" id="" class="mx-10 "><label for="contact" class="text-slate-500">Call a Phone Number</label>
+                                    <input type="radio" name="call" id="" class="mx-10"><label for="contact" class="text-slate-500">Send a Mail</label>
+                                </td>
+                               
+                            </tr>
+                            <tr class="w-full flex flex-nowrap">
+                                <td class="inline-block w-full m-3" colspan="4">
+                                    <p class="text-white m-2">Message</p>
+                                    <textarea name="" id="" class="w-full bg-slate-800 rounded-lg placeholder-shown:p-5" rows="5" placeholder="Enter Your message here" ></textarea>
+                                </td>
+                            </tr>
+                            <tr class="w-full flex flex-nowrap justify-between">
+                                <td class="inline-block w-full m-3" colspan="2">
+                                    <input type="checkbox" name="terms" id="" required>
+                                    <Label class="text-slate-500"><a href="#">I agree with Terms of Use and Privacy Policy</a></Label>
+                                </td>
+                                <td class=" w-full m-3 flex justify-end" colspan="2">
+                                    <a href="#"><input type="button" value="Send Your Message" class="bg-purple-500 text-white rounded-lg hover:shadow-lg hover:shadow-purple-400 p-3 mr-10"></a>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                 </div>
+                     <!-- Properties2 -->
+     <div class="ml-20 mt-10 mr-10" id="pr">
+        <div class="text-white">
+            <h1 class="font-bold text-4xl">Start Your Real Estate Journey Today</h1>
+            <div class="flex justify-between mt-5 text-slate-500">
+                <p class="text-lg p-3 w-2/3">Your dream property is just a click away. Whether you're looking for a new home, a strategic investment, or expert real estate advice, Estatein is here to assist you every step of the way. Take the first step towards your real estate goals and explore our available properties or get in touch with our team for personalized assistance.</p>  
+                <div class="w-1/3 flex items-start justify-end">
+                <a href="#" class="border-2 text-white shadow-md hover:shadow-purple-500 border-purple-500 rounded-lg p-3 bg-purple-500  justify-end"><button>View all Properties</button></a></div>
+            </div>
+        </div>
+     </div>
+     <hr class="mx-16 my-5 border-slate-500 ">
+     <!-- footer -->
+      <div class="flex justify-between" id="foot">
+        <div class="m-10 w-1/6">
+            <a href="#" class="ml-5"> 
+                <img width="64" height="64"  class="inline-block mt-0 mr-0 align-middle" src="https://img.icons8.com/nolan/64/real-estate.png" alt="real-estate"/> <span class="text-2xl font-semibold text-white ml-0">Hello</span>
+            </a>
+            <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Email</label>
+<div class="relative m-6 w-full">
+  <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+    <svg class="w-4 h-4 text-slate-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
+        <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"/>
+        <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"/>
+    </svg>
+  </div>
+  <input type="text" id="input-group-1" class="bg-slate-800 border-2 border-slate-500 text-slate-400 text-sm rounded-lg focus:border-purple-700 focus:border-2 focus:shadow-lg focus::shadow-purple-700 block w-full ps-10 p-2.5 " placeholder="Enter your gmail">
+  <a href="#"><img width="30" height="30" src="/images/send.png" alt="send--v1" class="absolute right-2 bottom-2 "></a>
+</div>
+        </div>
+        <div class="w-1/6 mt-10 ml-10">
+            <ul>
+                <a href="#go"><li class="text-slate-500 my-5 text-lg">Home</li></a>
+                <a href="#go"><li class="text-white mt-5 text-lg">Hero Section</li></a>
+                <a href="#featured"><li class="text-white mt-5 text-lg">Features</li></a>
+                <a href="#featured"><li class="text-white mt-5 text-lg">Properties</li></a>
+                <a href="#Review"><li class="text-white mt-5 text-lg">Testimonials</li></a>
+                <a href="#Faq"><li class="text-white mt-5 text-lg">FAQ's</li></a>
+            </ul>
+        </div>
+        <div class="w-1/6 mt-10">
+            <ul>
+                <a href="#go"><li class="text-slate-500 my-5 text-lg">Home</li></a>
+                <a href="#go"><li class="text-white mt-5 text-lg">Hero Section</li></a>
+                <a href="#featured"><li class="text-white mt-5 text-lg">Features</li></a>
+                <a href="#featured"><li class="text-white mt-5 text-lg">Properties</li></a>
+                <a href="#Review"><li class="text-white mt-5 text-lg">Testimonials</li></a>
+                <a href="#Faq"><li class="text-white mt-5 text-lg">FAQ's</li></a>
+            </ul>
+        </div>
+        <div class="w-1/6 mt-10">
+            <ul>
+                <a href="#go"><li class="text-slate-500 my-5 text-lg">Home</li></a>
+                <a href="#go"><li class="text-white mt-5 text-lg">Hero Section</li></a>
+                <a href="#featured"><li class="text-white mt-5 text-lg">Features</li></a>
+                <a href="#featured"><li class="text-white mt-5 text-lg">Properties</li></a>
+                <a href="#Review"><li class="text-white mt-5 text-lg">Testimonials</li></a>
+                <a href="#Faq"><li class="text-white mt-5 text-lg">FAQ's</li></a>
+            </ul>
+        </div>
+        <div class="w-1/6 mt-10">
+            <ul>
+                <a href="#go"><li class="text-slate-500 my-5 text-lg">Home</li></a>
+                <a href="#go"><li class="text-white mt-5 text-lg">Hero Section</li></a>
+                <a href="#featured"><li class="text-white mt-5 text-lg">Features</li></a>
+                <a href="#featured"><li class="text-white mt-5 text-lg">Properties</li></a>
+                <a href="#Review"><li class="text-white mt-5 text-lg">Testimonials</li></a>
+                <a href="#Faq"><li class="text-white mt-5 text-lg">FAQ's</li></a>
+            </ul>
+        </div>
+        <div class="w-1/6 mt-10">
+            <ul>
+                <a href="#go"><li class="text-slate-500 my-5 text-lg">Home</li></a>
+                <a href="#go"><li class="text-white mt-5 text-lg">Hero Section</li></a>
+                <a href="#featured"><li class="text-white mt-5 text-lg">Features</li></a>
+                <a href="#featured"><li class="text-white mt-5 text-lg">Properties</li></a>
+                <a href="#Review"><li class="text-white mt-5 text-lg">Testimonials</li></a>
+                <a href="#Faq"><li class="text-white mt-5 text-lg">FAQ's</li></a>
+            </ul>
+        </div>
+      </div>
+      <hr class="mx-16 my-5 border-slate-500 ">
+      <div class="flex justify-between mx-16 my-5">
+        <div>
+           <p class="text-white"> &copy;2025 . All Rights Reserved <a href="#" class="underline text-slate-500">Terms & Conditions</a></p>
+        </div> 
+        <div class="mr-10">
+            <a href="#"><img width="30" height="30" src="/images/fb.png" alt="facebook-logo" class="mr-3 inline-block bg-slate-600 rounded-lg hover:shadow-lg hover:shadow-slate-600"></a>
+           <a href="#"> <img width="30" height="30" src="/images/linked.png" alt="linkedin-logo" class="inline-block mr-3 bg-slate-600 rounded-lg hover:shadow-lg hover:shadow-slate-600"></a>
+            <a href="#"><img width="30" height="30" src="/images/linked.png" alt="linkedin-logo" class="inline-block mr-3 bg-slate-600 rounded-lg hover:shadow-lg hover:shadow-slate-600"></a>
+            <a href="#"><img width="30" height="30" src="/images/linked.png" alt="linkedin-logo" class="inline-block mr-3 bg-slate-600 rounded-lg hover:shadow-lg hover:shadow-slate-600"></a>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".centered-slide-carousel", {
+     centeredSlides: true,
+     paginationClickable: true,
+     loop: true,
+     spaceBetween: 30,
+     autoplay: {
+  delay: 2000,
+  disableOnInteraction: false,
+},
+     slideToClickedSlide: true,
+     pagination: {
+       el: ".centered-slide-carousel .swiper-pagination",
+       clickable: true,
+     },
+     breakpoints: {
+       1920: {
+         slidesPerView: 4,
+         spaceBetween: 30
+       },
+       1028: {
+         slidesPerView: 2,
+         spaceBetween: 10
+       },
+       990: {
+         slidesPerView: 1,
+         spaceBetween: 0
+       }
+     }
+    });
+    </script>
+</html>
