@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<style>
+    .swiper-button-next::after,
+.swiper-button-prev::after {
+    display: none !important;
+}
+    .swiper-wrapper {
+width: 100%;
+height: max-content !important;
+padding-bottom: 64px !important;
+-webkit-transition-timing-function: linear !important;
+transition-timing-function: linear !important;
+position: relative;
+}
+.swiper-pagination-current {
+color: #64748B !important;
+}
+.swiper-pagination-total {
+color: #64748B;
+}
+</style>
+</head>
+<body class="bg-slate-900">
+   <div class="" id="go">
+        <!-- nav bar -->
+        <div  class="w-full flex h-20 bg-slate-900 fixed z-50 justify-between p-5 ">
+            <div>
+           <a href="index.html" class="ml-5"> 
+            <img width="64" height="64"  class="inline-block mt-0 mr-0 align-middle" src="https://img.icons8.com/nolan/64/real-estate.png" alt="real-estate"/> <span class="text-2xl font-semibold text-white ml-0">Hello</span>
+        </a>
+        </div>
+        <div class="">
+            <ul class="flex ">
+                <a href="index.html" class="text-slate-500 p-2 rounded-lg hover:bg-purple-500 hover:text-white mr-0"><li>Home</li></a>
+                <a href="properties.html" class="text-slate-500 p-2 rounded-lg hover:bg-purple-500 hover:text-white"><li>Properties </li></a>
+                <a href="aboutUs.html" class="text-slate-500 p-2 rounded-lg hover:bg-purple-500 hover:text-white"><li>About Us</li></a>
+                <a href="service.html" class="text-slate-500 p-2 rounded-lg hover:bg-purple-500 hover:text-white"><li>Services</li></a>
+                <a href="Contact.html" class="text-slate-500 p-2 rounded-lg hover:bg-purple-500 hover:text-white"><li>Contact Us</li></a>
+            </ul>
+        </div>
+        
+        <div>
+            <a href="#" class=" p-3  rounded-xl text-purple-500  border-2 border-purple-500 hover:bg-purple-500 hover:text-white align-middle hover:shadow-md hover:shadow-slate-500"><button>Login/SignUp</button></a>
+        </div>
+        </div>
+        <div class="w-full h-16 bg-purple-500 "></div>
+        <!-- hero section photo and Price -->
+         <div class="m-16">
+            <div class="flex justify-between">
+                <div class="flex justify-center items-center">
+                    <h1 class="mr-5 text-white text-2xl">Seaside Serenity Villa</h1>
+                    <p class="p-1 border-slate-700 shadow-sm shadow-slate-400 border-2 rounded-lg text-slate-500"><svg class="inline-block mr-2 text-slate-500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#64748B" version="1.1" id="Capa_1" width="16" height="16" viewBox="0 0 395.71 395.71" xml:space="preserve">
+                        <g>
+                            <path d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738   c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388   C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191   c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z"/>
+                        </g>
+                        </svg>Malibu,Calafonia</p>
+                </div>
+                <div class="flex flex-col justify-end">
+                    <h2 class="text-slate-500 ">Price</h2>
+                    <p class="text-white text-2xl">$1,250,000</p>
+                </div>
+            </div>
+            <div class="p-5 m-10 flex justify-center items-center">
+                <div class="w-2/3 relative">
+                    <div class="swiper fraction-slide-carousel swiper-container relative">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="border-purple-500 border-2 rounded-2xl h-96 flex justify-center items-center">
+                        <img src="/images/room.png" alt="" class="w-full h-full">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
+                        <img src="/images/room.png" alt="" class="w-full h-full">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
+                        <img src="/images/room.png" alt="" class="w-full h-full">
+                      </div>
+                    </div>
+                    </div>
+                    <div class="flex items-center gap-8 lg:justify-start justify-center">
+                    <button id="slider-button-left" class="swiper-button-prev group !p-2 flex justify-center items-center border border-solid border-purple-600 !w-12 !h-12 transition-all duration-500 rounded-full !top-2/4 !-translate-y-8 !left-5 hover:bg-white" data-carousel-prev>
+                      <svg class="h-5 w-5 text-purple-600 group-hover:text-slate-500" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M10.0002 11.9999L6 7.99971L10.0025 3.99719" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </button>
+                    <button id="slider-button-right" class="swiper-button-next group !p-2 flex justify-center items-center border border-solid border-purple-600 !w-12 !h-12 transition-all duration-500 rounded-full !top-2/4 !-translate-y-8 !right-5 hover:bg-white" data-carousel-next>
+                      <svg class="h-5 w-5 text-purple-600 group-hover:text-purple-500" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M5.99984 4.00012L10 8.00029L5.99748 12.0028" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </button>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    </div>
+                    </div>
+                    <div class="">
+                        <a href="#go">
+                        <img src="https://www.freeiconspng.com/thumbs/up-arrow-png/black-up-arrow-png-6.png" alt="" class="right-5 bottom-5 fixed w-10 h-10 bg-slate-400 rounded-md z-50"></a>
+                      </div>
+            </div>
+         </div>
+         <!-- description -->
+          <div class="flex justify-between m-10">
+            <div class="w-1/2 mr-6">
+            <div class="p-5 border-2 border-slate-500 rounded-lg shadow-md shadow-slate-700 w-full m-6">
+                <h1 class="text-white font-xl font-semibold">Description</h1>
+                <p class="text-slate-500 font-xl">Discover your own piece of paradise with the Seaside Serenity Villa. T With an open floor plan, breathtaking ocean views from every room, and direct access to a pristine sandy beach, this property is the epitome of coastal living.</p>
+                <hr class="bg-slate-500 m-5">
+                <div class="m-5 flex w-full justify-between">
+                    <div class="border-r-2 w-1/3 ">
+                        <p class="text-slate-500 "><img src="/images/bed.png" alt="" class="inline-block mr-2">bedroom</p>
+                        <h1 class="font-semibold text-white">04</h1>
+                    </div>
+                    <div class="border-r-2 w-1/3 ml-3">
+                      <p class="text-slate-500 "><img src="/images/bath.png" alt="" class="inline-block mr-2">bathroom</p>
+                      <h1 class="font-semibold text-white">04</h1>
+                  </div>
+                  <div class=" w-1/3 ml-3">
+                    <p class="text-slate-500 "><img src="/images/Area.png" alt="" class="inline-block mr-2">bedroom</p>
+                    <h1 class="font-semibold text-white">04</h1>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-5 pb-10 border-2 border-slate-500 h-[500px] rounded-lg shadow-md shadow-slate-700 w-1/2 m-6 flex flex-col justify-around">
+                    <h1 class="text-white font-semibold text-xl">Key Features and Amenities</h1>
+                    <p class="text-slate-500 border-l-2 p-2 border-purple-500 bg-slate-700 w-4/5"><img src="/images/Icon.png" alt="" class="inline p-2"> Expansive oceanfront terrace for outdoor entertaining</p>
+                    <p class="text-slate-500 border-l-2 p-2 border-purple-500 bg-slate-700 w-4/5"><img src="/images/Icon.png" alt="" class="inline p-2"> Gourmet kitchen with top-of-the-line appliances</p>
+                    <p class="text-slate-500 border-l-2 p-2 border-purple-500 bg-slate-700 w-4/5"><img src="/images/Icon.png" alt="" class="inline p-2"> Private beach access for morning strolls and sunset views</p>
+                    <p class="text-slate-500 border-l-2 p-2 border-purple-500 bg-slate-700 w-4/5"><img src="/images/Icon.png" alt="" class="inline p-2"> Master suite with a spa-inspired bathroom and ocean-facing balcony</p>
+                    <p class="text-slate-500 border-l-2 p-2 border-purple-500 bg-slate-700 w-4/5"><img src="/images/Icon.png" alt="" class="inline p-2"> Private garage and ample storage space</p>
+            </div>
+          </div>
+          <!-- Inquire About Seaside Serenity Villa -->
+          <div class="flex w-full m-10">
+            <div class="w-1/3 p-5">
+              <h1 class="text-white text-xl font-semibold">Inquire About Seaside Serenity Villa</h1>
+              <p class="text-slate-500 mt-3">Interested in this property? Fill out the form below, and our real estate experts will get back to you with more details, including scheduling a viewing and answering any questions you may have.</p>
+            </div>
+            <div class="w-full mr-20">
+              <fieldset class="border-slate-500 border-2 mx-5 p-5 rounded-lg">
+                <div class="flex w-full">
+                  <div class="w-1/2 m-5">
+                    <h1 class="text-white text-xl">First Name</h1>
+                    <input type="text" name="fname" id="" placeholder="Enter Your First Name" class="bg-slate-600 rounded-lg placeholder-shown:p-3 mt-5 w-full inline-block">
+                  </div>
+                  <div class="w-1/2 m-5">
+                    <h1 class="text-white text-xl">Last Name</h1>
+                    <input type="text" name="lname" id="" placeholder="Enter Your Last Name" class="bg-slate-600 rounded-lg placeholder-shown:p-3 mt-5 w-full inline-block">
+                  </div>
+                </div>
+                <div class="flex w-full">
+                  <div class="w-1/2 m-5">
+                    <h1 class="text-white text-xl">Email</h1>
+                    <input type="email" name="mail" id="" placeholder="Enter Your Email" class="bg-slate-600 rounded-lg placeholder-shown:p-3 mt-5 w-full inline-block">
+                  </div>
+                  <div class="w-1/2 m-5">
+                    <h1 class="text-white text-xl">Phone Number</h1>
+                    <input type="tel" name="phone" id="" placeholder="Enter Your Phone Number" class="bg-slate-600 rounded-lg placeholder-shown:p-3 mt-5 w-full inline-block">
+                  </div>
+                </div>
+                <div class="m-5">
+                  <h1 class="text-white text-xl">Selected Property</h1>
+                    <input type="tel" name="phone" id="" placeholder="Seaside Serenity Villa, Malibu, California" class="bg-slate-600 rounded-lg placeholder-shown:p-3 mt-5 w-full inline-block">
+                </div>
+                <div class="m-5">
+                  <h1 class="text-white text-xl">Message</h1>
+                  <Textarea placeholder="Enter Your Message Here" class="bg-slate-600 rounded-lg placeholder-shown:p-3 mt-5 w-full inline-block" rows="5"></Textarea>
+                </div>
+                <div class="m-5 flex justify-between">
+                  <div>
+                    <input type="checkbox" name="terms" id="" class="bg-slate-500" required>
+                    <p class="text-slate-500 inline-block">I agree with <a href="#" class="underline text-slate-500">Terms of Use and Privacy Policy</a></p>
+                  </div>
+                  <div>
+                    <a href="#" class="p-3 bg-purple-500 text-white rounded-lg"><button>Send Your Message</button></a>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <div>
+            <!-- Comprehensive Pricing Details -->
+            <div class="text-white ml-10 mt-10 mr-10">
+              <h1 class="font-bold text-4xl">Comprehensive Pricing Details</h1>
+              <div class="flex justify-between mt-5 text-slate-500">
+                  <p class="text-lg p-3 w-2/3">At Estatein, transparency is key. We want you to have a clear understanding of all costs associated with your property investment. Below, we break down the pricing for Seaside Serenity Villa to help you make an informed decision.</p>
+              </div>
+            </div>
+            <div class="flex m-10 border-2 border-slate-700 p-5 rounded-lg">
+              <h1 class="text-white font-bold text-xl px-3 border-r-2 border-slate-700">Note</h1>
+              <p class="text-slate-500 ml-3">The figures provided above are estimates and may vary depending on the property, location, and individual circumstances.</p>
+            </div>
+            <div class="flex m-10">
+              <div class="w-1/3">
+                <p class="text-slate-500 text-xl mb-5">Listing Price</p>
+                <h1 class="text-white font-semibold text-2xl">$1,250,000</h1>
+              </div>
+              <div class="w-2/3">
+                <div class="border-2 border-slate-600 rounded-lg m-5">
+                  <div class="flex justify-between m-5">
+                    <h1 class="text-white font-semibold text-2xl">Additional Fees</h1>
+                    <a href="#" class="bg-slate-800 text-slate-500 p-3 rounded-lg"><button>Learn More</button></a>
+                  </div>
+                  <hr class="border-slate-500 mx-10">
+                  <div class="flex justify-between m-5">
+                    <div class="w-1/2">
+                      <p class="text-slate-500 text-xl">Property Transfer Tax</p>
+                      <h1 class="text-white font-semibold text-2xl">$25,000 <p class="text-slate-500 bg-slate-700 rounded-xl inline-block text-sm p-2">Based on the sale price and local regulations</p></h1>
+                    </div>
+                    <div class="pl-5 border-l-2 border-slate-500 w-1/2">
+                      <p class="text-slate-500 text-xl">Legal Fees</p>
+                      <h1 class="text-white font-semibold text-2xl">$3,000 <p class="text-slate-500 bg-slate-700 rounded-xl inline-block text-sm p-2">Approximate cost for legal services, including title transfer</p></h1>
+                    </div>
+                  </div>
+                  <hr class="border-slate-500 mx-10">
+                  <div class="flex justify-between m-5">
+                    <div class="w-1/2">
+                      <p class="text-slate-500 text-xl">Home Inspection</p>
+                      <h1 class="text-white font-semibold text-2xl">$500 <p class="text-slate-500 bg-slate-700 rounded-xl inline-block text-sm p-2">Recommended for due diligence</p></h1>
+                    </div>
+                    <div class="pl-5 border-l-2 border-slate-500 w-1/2">
+                      <p class="text-slate-500 text-xl">Property Insurance</p>
+                      <h1 class="text-white font-semibold text-2xl">$12,000 <p class="text-slate-500 bg-slate-700 rounded-xl inline-block text-sm p-2">Annual cost for comprehensive property insurance</p></h1>
+                    </div>
+                  </div>
+                  <hr class="border-slate-500 mx-10">
+                  <div class="flex justify-between m-5">
+                    <div class="w-1/2">
+                      <p class="text-slate-500 text-xl">Mortgage Fees</p>
+                      <h1 class="text-white font-semibold text-2xl">Varies <p class="text-slate-500 bg-slate-700 rounded-xl inline-block text-sm p-2">If applicable, consult with your lender for specific details</p></h1>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-2 border-slate-600 rounded-lg m-5">
+                  <div class="flex justify-between m-5">
+                    <h1 class="text-white font-semibold text-2xl">Monthly Costs</h1>
+                    <a href="#" class="bg-slate-800 text-slate-500 p-3 rounded-lg"><button>Learn More</button></a>
+                  </div>
+                  <hr class="border-slate-500 mx-10">
+                  <div class="flex justify-between m-5">
+                    <div class="w-1/2">
+                      <p class="text-slate-500 text-xl">Property Taxes</p>
+                      <h1 class="text-white font-semibold text-2xl">$1,250 <p class="text-slate-500 bg-slate-700 rounded-xl inline-block text-sm p-2">Approximate monthly property tax based on the sale price and local rates</p></h1>
+                    </div>
+                  </div>
+                  <hr class="border-slate-500 mx-10">
+                  <div class="flex justify-between m-5">
+                    <div class="w-1/2">
+                      <p class="text-slate-500 text-xl">Homeowners' Association Fee</p>
+                      <h1 class="text-white font-semibold text-2xl">$300 <p class="text-slate-500 bg-slate-700 rounded-xl inline-block text-sm p-2">Monthly fee for common area maintenance and security</p></h1>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-2 border-slate-600 rounded-lg m-5">
+                  <div class="flex justify-between m-5">
+                    <h1 class="text-white font-semibold text-2xl">Total Initial Costs</h1>
+                    <a href="#" class="bg-slate-800 text-slate-500 p-3 rounded-lg"><button>Learn More</button></a>
+                  </div>
+                  <hr class="border-slate-500 mx-10">
+                  <div class="flex justify-between m-5">
+                    <div class="w-1/2">
+                      <p class="text-slate-500 text-xl">Listing Price</p>
+                      <h1 class="text-white font-semibold text-2xl">$1,250,000</h1>
+                    </div>
+                    <div class="pl-5 border-l-2 border-slate-500 w-1/2">
+                      <p class="text-slate-500 text-xl">Additional Fees</p>
+                      <h1 class="text-white font-semibold text-2xl">$29,700 <p class="text-slate-500 bg-slate-700 rounded-xl inline-block text-sm p-2">Property transfer tax, legal fees, inspection, insurance</p></h1>
+                    </div>
+                  </div>
+                  <hr class="border-slate-500 mx-10">
+                  <div class="flex justify-between m-5">
+                    <div class="w-1/2">
+                      <p class="text-slate-500 text-xl">Down payment</p>
+                      <h1 class="text-white font-semibold text-2xl">$250,000 <p class="text-slate-500 bg-slate-700 rounded-xl inline-block text-sm p-2">20%</p></h1>
+                    </div>
+                    <div class="pl-5 border-l-2 border-slate-500 w-1/2">
+                      <p class="text-slate-500 text-xl">Mortgage Amount</p>
+                      <h1 class="text-white font-semibold text-2xl">$1,000,000<p class="text-slate-500 bg-slate-700 rounded-xl inline-block text-sm p-2">If applicable</p></h1>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-2 border-slate-600 rounded-lg m-5">
+                  <div class="flex justify-between m-5">
+                    <h1 class="text-white font-semibold text-2xl">Monthly Expenses</h1>
+                    <a href="#" class="bg-slate-800 text-slate-500 p-3 rounded-lg"><button>Learn More</button></a>
+                  </div>
+                  <hr class="border-slate-500 mx-10">
+                  <div class="flex justify-between m-5">
+                    <div class="w-1/2">
+                      <p class="text-slate-500 text-xl">Property Taxes</p>
+                      <h1 class="text-white font-semibold text-2xl">$1,250</h1>
+                    </div>
+                    <div class="pl-5 border-l-2 border-slate-500 w-1/2">
+                      <p class="text-slate-500 text-xl">Homeowners' Association Fee</p>
+                      <h1 class="text-white font-semibold text-2xl">$300 </h1>
+                    </div>
+                  </div>
+                  <hr class="border-slate-500 mx-10">
+                  <div class="flex justify-between m-5">
+                    <div class="w-1/2">
+                      <p class="text-slate-500 text-xl">Mortgage Payment</p>
+                      <h1 class="text-white font-semibold text-2xl">Varies based on terms and interest rate <p class="text-slate-500 bg-slate-700 rounded-xl inline-block text-sm p-2">If applicable</p></h1>
+                    </div>
+                    <div class="pl-5 border-l-2 border-slate-500 w-1/2">
+                      <p class="text-slate-500 text-xl">Property Insurance</p>
+                      <h1 class="text-white font-semibold text-2xl">$100 <p class="text-slate-500 bg-slate-700 rounded-xl inline-block text-sm p-2">Approximate monthly cost</p></h1>
+                    </div>
+                  </div>
+                  <hr class="border-slate-500 mx-10">
+                  <div class="flex justify-between m-5">
+                    <div class="w-1/2">
+                      <p class="text-slate-500 text-xl">Mortgage Fees</p>
+                      <h1 class="text-white font-semibold text-2xl">Varies <p class="text-slate-500 bg-slate-700 rounded-xl inline-block text-sm p-2">If applicable, consult with your lender for specific details</p></h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+              <!-- Faq -->
+    <div class="ml-20 mt-10 mr-10" id="Faq">
+      <div class="text-white">
+          <h1 class="font-bold text-4xl">Frequently Asked Questions</h1>
+          <div class="flex justify-between mt-5 text-slate-500">
+              <p class="text-lg p-3">Find answers to common questions about Estatein's services, property listings, and the real estate process. We're here to provide clarity and assist you every step of the way.</p>  
+              <a href="#" class="border-2 shadow-md hover:shadow-purple-400 border-slate-500 rounded-lg p-3 bg-slate-700"><button>View all FAQ's</button></a>
+          </div>
+      </div>
+      <div class="flex mt-5">
+          <div class="w-1/3 h-full border-2 border-slate-600 rounded-xl mr-3">
+              <h1 class="text-white font-bold text-lg m-5">How do I search for properties on Estatein?</h1>
+              <p class="text-slate-500 m-5">Learn how to use our user-friendly search tools to find properties that match your criteria.</p>
+              <a href="#" class="inline-block m-5 rounded-xl text-white bg-slate-800 border-2 border-slate-400 shadow-lg hover:shadow-purple-500 p-3"><button>Read More</button></a>
+          </div>
+          <div class="w-1/3 h-full border-2 border-slate-600 rounded-xl mr-3">
+              <h1 class="text-white font-bold text-lg m-5">How do I search for properties on Estatein?</h1>
+              <p class="text-slate-500 m-5">Learn how to use our user-friendly search tools to find properties that match your criteria.</p>
+              <a href="#" class="inline-block m-5 rounded-xl text-white bg-slate-800 border-2 border-slate-400 shadow-lg hover:shadow-purple-500 p-3"><button>Read More</button></a>
+          </div>
+          <div class="w-1/3 h-full border-2 border-slate-600 rounded-xl mr-3">
+              <h1 class="text-white font-bold text-lg m-5">How do I search for properties on Estatein?</h1>
+              <p class="text-slate-500 m-5">Learn how to use our user-friendly search tools to find properties that match your criteria.</p>
+              <a href="#" class="inline-block m-5 rounded-xl text-white bg-slate-800 border-2 border-slate-400 shadow-lg hover:shadow-purple-500 p-3"><button>Read More</button></a>
+          </div>
+      </div>
+  </div>
+  <hr class="m-16 border-slate-500 ">
+  <!-- Properties2 -->
+   <div class="ml-20 mt-10 mr-10" id="pr">
+      <div class="text-white">
+          <h1 class="font-bold text-4xl">Start Your Real Estate Journey Today</h1>
+          <div class="flex justify-between mt-5 text-slate-500">
+              <p class="text-lg p-3 w-2/3">Your dream property is just a click away. Whether you're looking for a new home, a strategic investment, or expert real estate advice, Estatein is here to assist you every step of the way. Take the first step towards your real estate goals and explore our available properties or get in touch with our team for personalized assistance.</p>  
+              <div class="w-1/3 flex items-start justify-end">
+              <a href="#" class="border-2 text-white shadow-md hover:shadow-purple-500 border-purple-500 rounded-lg p-3 bg-purple-500  justify-end"><button>View all Properties</button></a></div>
+          </div>
+      </div>
+   </div>
+   <!-- footer -->
+    <div class="flex justify-between" id="foot">
+      <div class="m-10 w-1/6">
+          <a href="#" class="ml-5"> 
+              <img width="64" height="64"  class="inline-block mt-0 mr-0 align-middle" src="https://img.icons8.com/nolan/64/real-estate.png" alt="real-estate"/> <span class="text-2xl font-semibold text-white ml-0">Hello</span>
+          </a>
+          <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Email</label>
+<div class="relative m-6 w-full">
+<div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+  <svg class="w-4 h-4 text-slate-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
+      <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"/>
+      <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"/>
+  </svg>
+</div>
+<input type="text" id="input-group-1" class="bg-slate-800 border-2 border-slate-500 text-slate-400 text-sm rounded-lg focus:border-purple-700 focus:border-2 focus:shadow-lg focus::shadow-purple-700 block w-full ps-10 p-2.5 " placeholder="Enter your gmail">
+<a href="#"><img width="30" height="30" src="/images/send.png" alt="send--v1" class="absolute right-2 bottom-2 "></a>
+</div>
+      </div>
+      <div class="w-1/6 mt-10 ml-10">
+          <ul>
+              <a href="#go"><li class="text-slate-500 my-5 text-lg">Home</li></a>
+              <a href="#go"><li class="text-white mt-5 text-lg">Hero Section</li></a>
+              <a href="#featured"><li class="text-white mt-5 text-lg">Features</li></a>
+              <a href="#featured"><li class="text-white mt-5 text-lg">Properties</li></a>
+              <a href="#Review"><li class="text-white mt-5 text-lg">Testimonials</li></a>
+              <a href="#Faq"><li class="text-white mt-5 text-lg">FAQ's</li></a>
+          </ul>
+      </div>
+      <div class="w-1/6 mt-10">
+          <ul>
+              <a href="#go"><li class="text-slate-500 my-5 text-lg">Home</li></a>
+              <a href="#go"><li class="text-white mt-5 text-lg">Hero Section</li></a>
+              <a href="#featured"><li class="text-white mt-5 text-lg">Features</li></a>
+              <a href="#featured"><li class="text-white mt-5 text-lg">Properties</li></a>
+              <a href="#Review"><li class="text-white mt-5 text-lg">Testimonials</li></a>
+              <a href="#Faq"><li class="text-white mt-5 text-lg">FAQ's</li></a>
+          </ul>
+      </div>
+      <div class="w-1/6 mt-10">
+          <ul>
+              <a href="#go"><li class="text-slate-500 my-5 text-lg">Home</li></a>
+              <a href="#go"><li class="text-white mt-5 text-lg">Hero Section</li></a>
+              <a href="#featured"><li class="text-white mt-5 text-lg">Features</li></a>
+              <a href="#featured"><li class="text-white mt-5 text-lg">Properties</li></a>
+              <a href="#Review"><li class="text-white mt-5 text-lg">Testimonials</li></a>
+              <a href="#Faq"><li class="text-white mt-5 text-lg">FAQ's</li></a>
+          </ul>
+      </div>
+      <div class="w-1/6 mt-10">
+          <ul>
+              <a href="#go"><li class="text-slate-500 my-5 text-lg">Home</li></a>
+              <a href="#go"><li class="text-white mt-5 text-lg">Hero Section</li></a>
+              <a href="#featured"><li class="text-white mt-5 text-lg">Features</li></a>
+              <a href="#featured"><li class="text-white mt-5 text-lg">Properties</li></a>
+              <a href="#Review"><li class="text-white mt-5 text-lg">Testimonials</li></a>
+              <a href="#Faq"><li class="text-white mt-5 text-lg">FAQ's</li></a>
+          </ul>
+      </div>
+      <div class="w-1/6 mt-10">
+          <ul>
+              <a href="#go"><li class="text-slate-500 my-5 text-lg">Home</li></a>
+              <a href="#go"><li class="text-white mt-5 text-lg">Hero Section</li></a>
+              <a href="#featured"><li class="text-white mt-5 text-lg">Features</li></a>
+              <a href="#featured"><li class="text-white mt-5 text-lg">Properties</li></a>
+              <a href="#Review"><li class="text-white mt-5 text-lg">Testimonials</li></a>
+              <a href="#Faq"><li class="text-white mt-5 text-lg">FAQ's</li></a>
+          </ul>
+      </div>
+    </div>
+    <hr class="mx-16 my-5 border-slate-500 ">
+    <div class="flex justify-between mx-16 my-5">
+      <div>
+         <p class="text-white"> &copy;2025 . All Rights Reserved <a href="#" class="underline text-slate-500">Terms & Conditions</a></p>
+      </div> 
+      <div class="mr-10">
+          <a href="#"><img width="30" height="30" src="/images/fb.png" alt="facebook-logo" class="mr-3 inline-block bg-slate-600 rounded-lg hover:shadow-lg hover:shadow-slate-600"></a>
+         <a href="#"> <img width="30" height="30" src="/images/linked.png" alt="linkedin-logo" class="inline-block mr-3 bg-slate-600 rounded-lg hover:shadow-lg hover:shadow-slate-600"></a>
+          <a href="#"><img width="30" height="30" src="/images/linked.png" alt="linkedin-logo" class="inline-block mr-3 bg-slate-600 rounded-lg hover:shadow-lg hover:shadow-slate-600"></a>
+          <a href="#"><img width="30" height="30" src="/images/linked.png" alt="linkedin-logo" class="inline-block mr-3 bg-slate-600 rounded-lg hover:shadow-lg hover:shadow-slate-600"></a>
+      </div>
+  </div>
+   </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".fraction-slide-carousel", {
+    loop: true,
+    fraction: true,
+    navigation: {
+      nextEl: ".fraction-slide-carousel .swiper-button-next",
+      prevEl: ".fraction-slide-carousel .swiper-button-prev",
+    },
+    pagination: {
+      el: '.fraction-slide-carousel .swiper-pagination',
+      type: 'fraction',
+      formatFractionCurrent: function(number) {
+        return number;
+      }
+    },
+    });
+    </script>
+</html>
