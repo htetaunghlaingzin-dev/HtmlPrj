@@ -3,8 +3,8 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
-      backgroundImage: {
-        'hero-pattern': "url('/images/Group.png')",
+      gradientColorStopPositions: {
+        5: '1%',
       }
     },
   },
