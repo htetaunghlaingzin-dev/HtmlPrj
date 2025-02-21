@@ -1,0 +1,6 @@
+create table users(user_id int not null identity primary key,name varchar(20) not null,email varchar(50) not null,password varchar(20) not null,phone int not null, role varchar(20));
+create table owner(owner_ID int primary key not null identity,Name varchar(20),phone int not null, email varchar(50) not null);
+create table property(property_id int not null identity primary key,title varchar(20) not null, description varchar(50),price int not null,location varchar(50) not null,size int not null,type varchar(20),owner_ID int not null,listing_date date,foreign key (owner_ID) references owner(owner_ID));
+create table transactions(transaction_ID int primary key not null identity,buyer_ID int not null,property_id int not null,TransactionDate date,Amount int not null,foreign key (buyer_ID) references users(user_id),foreign key (property_id) references property(property_id));
+create table review(review_ID int primary key not null identity,property_ID int not null,user_ID int not null,rating int not null,foreign key(property_ID) references property(property_id),foreign key (user_ID) references users(user_id));
+create table wishlist(whishlist_ID int primary key not null identity,user_id int not null,property_id int not null,foreign key (user_id) references users(user_id),foreign key (property_id) references property(property_id));
