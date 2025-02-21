@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body class="bg-black">
     <div class="" id="go">
         
         <!-- nav_bar -->
-        <div class="w-full flex h-20 bg-slate-900 fixed z-50 justify-between p-5 ">
+        <nav class="w-full flex h-20 bg-slate-900 fixed z-50 justify-between p-5 ">
             <div>
            <a href="#" class="ml-5"> 
             <img width="64" height="64"  class="inline-block mt-0 mr-0 align-middle" src="/images/logo.png" alt="real-estate"/>
@@ -26,14 +27,14 @@
                 <a href="properties.html" class="text-slate-500 p-2 rounded-lg hover:bg-purple-500 hover:text-white"><li>Properties </li></a>
                 <a href="aboutUs.html" class="text-slate-500 p-2 rounded-lg hover:bg-purple-500 hover:text-white"><li>About Us</li></a>
                 <a href="service.html" class="text-slate-500 p-2 rounded-lg hover:bg-purple-500 hover:text-white"><li>Services</li></a>
-                <a href="Contact.html" class="text-slate-500 p-2 rounded-lg hover:bg-purple-500 hover:text-white"><li>Contact Us</li></a>
+                <a href="Contact.html" class="mx-2 p-2 rounded-lg hover:p-3 bg-purple-500 text-white"><li>Contact Us</li></a>
             </ul>
         </div>
         
         <div>
             <a href="login.html" class=" p-3  rounded-xl text-purple-500  border-2 border-purple-500 hover:bg-purple-500 hover:text-white align-middle hover:shadow-md hover:shadow-slate-500"><button>Login/SignUp</button></a>
         </div>
-        </div>
+        </nav>
         <div class="w-full h-16 bg-purple-500 ">
         </div>
         <!-- hero section -->
@@ -63,6 +64,127 @@
                 <a href="properties.html" class=""><img src="../images/Icon4.png" class="mx-auto " alt="" srcset=""> <p class="text-white">Smart Investments,Informed Decisions</p></a>
             </div>
         </div>
+        <!-- let connect -->
+         <section>
+            <div class="text-white ml-10 mt-10 mr-10">
+                <h1 class="font-bold text-4xl">Let's Connect</h1>
+                <div class="flex justify-between mt-5 text-slate-500">
+                    <p class="text-lg p-3">We're excited to connect with you and learn more about your real estate goals. Use the form below to get in touch with Estatein. Whether you're a prospective client, partner, or simply curious about our services, we're here to answer your questions and provide the assistance you need.</p>
+                </div>
+            </div>
+            <div class="mx-20 my-10">
+                <fieldset class="border-slate-500 rounded-xl border-2 mx-5 p-5">
+                    <table class=" w-full">
+                        <tr class="w-full flex flex-nowrap">
+                            <td class="inline-block w-1/3 m-3">
+                                <p class="text-white m-2">First Name</p>
+                                <input type="text" name="" id="" placeholder="Enter Your First Name" class="w-full bg-slate-800 text-slate-500 border-2 border-slate-600 p-3 rounded-lg">
+                            </td>
+                            <td class="inline-block w-1/3 m-3">
+                                <p class="text-white m-2">Last Name</p>
+                                <input type="text" name="" id="" placeholder="Enter Your Last Name" class="w-full bg-slate-800 text-slate-500 border-2 border-slate-600 p-3 rounded-lg" required>
+                            </td>
+                            <td class="inline-block w-1/3 m-3">
+                                <p class="text-white m-2">Enter your email</p>
+                                <input type="email" name="" id="" placeholder="Enter Your Email" required class="w-full bg-slate-800 text-slate-500 border-2 border-slate-600 p-3 rounded-lg" required>
+                            </td>
+                        </tr>
+                        <tr class="w-full flex flex-nowrap">
+                            <td class="inline-block w-1/3 m-3">
+                                <p class="text-white m-2">Phone Number</p>
+                                <input type="tel" name="" id="" placeholder="Enter Your Phone Number" required class="w-full bg-slate-800 text-slate-500 border-2 border-slate-600 p-3 rounded-lg" required>
+                            </td>
+                            <td class="inline-block w-1/3 m-3">
+                                <p class="text-white m-2">Inquiry Type</p>
+                                <select name="" id="" required class=" bg-slate-800 text-slate-500 mr-3 w-full border-2 border-slate-600 p-3 rounded-xl">
+                                    <option value="">Select Inquiry Type</option>
+                                    <option value="1">Villa</option>
+                                    <option value="2">Condo</option>
+                                    <option value="3">Building</option>
+                                    <option value="4">Mini Condo</option>
+                                    <option value="5">O Eain Building</option>
+                                </select>
+                            </td>
+                            <td class="inline-block w-1/3 m-3">
+                                <p class="text-white m-2">How did You Hear About Us?</p>
+                                <select name="" id="" required class=" bg-slate-800 text-slate-500 mr-3 w-full border-2 border-slate-600 p-3 rounded-xl">
+                                    <option value="">Select</option>
+                                    <option value="1">From friends</option>
+                                    <option value="2">From Commercial</option>
+                                    <option value="3">Fb Ads</option>
+                                    <option value="4">Google Ads</option>
+                                    <option value="5">Others</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr class="w-full flex flex-nowrap">
+                            <td class="inline-block w-full m-3" colspan="4">
+                                <p class="text-white m-2">Message</p>
+                                <textarea name="" id="" class="w-full bg-slate-800 rounded-lg placeholder-shown:p-5" rows="5" placeholder="Enter Your message here" ></textarea>
+                            </td>
+                        </tr>
+                        <tr class="w-full flex flex-nowrap justify-between">
+                            <td class="inline-block w-full m-3" colspan="2">
+                                <input type="checkbox" name="terms" id="" required>
+                                <Label class="text-slate-500"><a href="#">I agree with Terms of Use and Privacy Policy</a></Label>
+                            </td>
+                            <td class=" w-full m-3 flex justify-end" colspan="2">
+                                <a href="#"><input type="button" value="Send Your Message" class="bg-purple-500 text-white rounded-lg hover:shadow-lg hover:shadow-purple-400 p-3 mr-10"></a>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </div>
+         </section>
+         <!-- location -->
+          <section class="mx-20">
+            <div class="text-white  mt-10 mr-10">
+                <h1 class="font-bold text-4xl">Let's Connect</h1>
+                <div class="flex justify-between mt-5 text-slate-500">
+                    <p class="text-lg p-3">We're excited to connect with you and learn more about your real estate goals. Use the form below to get in touch with Estatein. Whether you're a prospective client, partner, or simply curious about our services, we're here to answer your questions and provide the assistance you need.</p>
+                </div>
+            </div>
+            <div class="flex justify-between">
+                <div class=" w-1/2 border-2 p-5 border-slate-700 my-10 mr-5 rounded-xl">
+                    <h3 class="text-white ">Main Headquarters</h3>
+                    <h2 class="text-white font-semibold text-2xl">NO.(1), Pyay Road,Kamayut,Yangon Tshp</h2>
+                    <p class="text-slate-600 my-3">Our main headquarters serve as the heart of Estatein.Located in the busting city center,this is where our care team of expects operates,driving the excellence and innovation that define us. </p>
+                    <span class="text-white p-3 border-2 border-slate-700 rounded-full m-3 inline-block"><i class="fa-solid fa-envelope" style="color: #fafaf9; margin-right: 10px;"></i>info@real_estate.com</span>
+                    <span class="text-white p-3 border-2 border-slate-700 rounded-full m-3 inline-block"><i class="fa-solid fa-phone" style="color: #f7f7f7; margin-right: 10px;"></i>(+95)-9-5123076</span>
+                    <span class="text-white p-3 border-2 border-slate-700 rounded-full m-3 inline-block"><i class="fa-solid fa-location-crosshairs" style="color: #fcfcfc; margin-right: 10px;"></i>Yangon</span>
+                    <a href="#" class="w-full p-3 bg-purple-700 rounded-xl text-white inline-block text-center">Get Directions</a>
+                </div>
+                <div class=" w-1/2 border-2 border-slate-700 my-10 mr-5 rounded-xl p-5">
+                    <h3 class="text-white ">Regional Office</h3>
+                    <h2 class="text-white font-semibold text-2xl">NO.(10) Yangon-Pyay highway road, Pyay Tshp</h2>
+                    <p class="text-slate-600 my-3">Estatein's presence extends to multiple regions,each with its own dynamic real estate landscape.Discover our regional offices,staffed by local experts who understand the nuances of their respective markets.</p>
+                    <span class="text-white p-3 border-2 border-slate-700 rounded-full m-3 inline-block"><i class="fa-solid fa-envelope" style="color: #fafaf9; margin-right: 10px;"></i>info@real_estate.com</span>
+                    <span class="text-white p-3 border-2 border-slate-700 rounded-full m-3 inline-block"><i class="fa-solid fa-phone" style="color: #f7f7f7; margin-right: 10px;"></i>(+95)-9-5123077</span>
+                    <span class="text-white p-3 border-2 border-slate-700 rounded-full m-3 inline-block"><i class="fa-solid fa-location-crosshairs" style="color: #fcfcfc; margin-right: 10px;"></i>Pyay</span>
+                    <a href="#" class="w-full p-3 bg-purple-700 rounded-xl text-white inline-block text-center">Get Directions</a>
+                </div>
+            </div>
+          </section>
+          <!-- photo grid -->
+           <section>
+            <table class="border-separate border-spacing-5 rounded-xl bg-[url('/images/GridBg.png')] mx-[10%] border-2 border-slate-700">
+                <tr class="w-full">
+                    <td><img src="/images/grid1.png" alt="" class="w-full"></td>
+                    <td><img src="/images/grid2.png" alt="" class="w-full"></td>
+                </tr>
+                <tr>
+                    <td><img src="/images/grid3.png" alt="" class="w-full"></td>
+                    <td><img src="/images/grid4.png" alt="" class="w-full"></td>
+                </tr>
+                <tr>
+                    <td class="w-[50%]">
+                        <h1 class="text-white font-semibold text-2xl m-3">Explore Estatein's World</h1>
+                        <span class="text-white inline-block m-3">Step inside the world of Estatein, where professionalism meets warmth, and expertise meets passion. Our gallery offers a glimpse into our team and workspaces, inviting you to get to know us better.</span>
+                    </td>
+                    <td><img src="/images/grid5.png" alt="" class="w-full"></td>
+                </tr>
+            </table>
+           </section>
          <!-- Properties2 -->
      <div class="ml-20 mt-10 mr-10 bg-[url('/images/bg2.png')]" id="pr">
         <div class="text-white">
